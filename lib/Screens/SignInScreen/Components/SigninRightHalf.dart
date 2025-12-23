@@ -6,21 +6,19 @@ class SigninrightHalf extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Welcome Back",
-            style: GoogleFonts.inter(
-              color: Color(0xffFFFFFF),
-              fontSize: 30,
-              fontWeight: FontWeight.w900,
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "Welcome Back",
+          style: GoogleFonts.inter(
+            color: Color(0xffFFFFFF),
+            fontSize: 30,
+            fontWeight: FontWeight.w900,
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
