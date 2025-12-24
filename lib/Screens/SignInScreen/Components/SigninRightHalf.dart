@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tradeapp/Screens/DashboardScreen/DashboardScreen.dart';
 import 'package:tradeapp/Screens/SignUpScreen/SignUpScreen.dart';
 
 class SigninrightHalf extends StatelessWidget {
@@ -157,7 +158,7 @@ class SigninrightHalf extends StatelessWidget {
             InkWell(
               onTap: () {
                 Get.to(
-                  () => Signupscreen(),
+                  () => Dashboardscreen(),
                   transition: Transition.rightToLeft,
                 );
               },
