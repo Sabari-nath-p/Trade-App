@@ -22,7 +22,7 @@ class Signinlefthalf extends StatelessWidget {
             child: Row(
               children: [
                 Image.asset(
-                  "assets/images/Component 1.png",
+                  "assets/images/logo.png",
                   height: 32.h,
                   width: 32.w,
                 ),
