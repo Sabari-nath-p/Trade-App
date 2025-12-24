@@ -10,15 +10,16 @@ class SigninrightHalf extends StatelessWidget {
     return Center(
       child: Container(
         height: 598,
-        width: 384,
+        width: double.infinity,
+        alignment: Alignment.center,
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color:  Color(0xff111F22),
+          color: Color(0xff111F22),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               "Welcome Back",
@@ -28,24 +29,21 @@ class SigninrightHalf extends StatelessWidget {
                 fontWeight: FontWeight.w900,
               ),
             ),
-      
+
             const SizedBox(height: 8),
-      
+
             Text(
               "Access your intelligent trading dashboard.",
-              style: GoogleFonts.inter(
-                fontSize: 16,
-                color:  Color(0xff92C0C9),
-              ),
+              style: GoogleFonts.inter(fontSize: 16, color: Color(0xff92C0C9)),
             ),
-      
+
             const SizedBox(height: 24),
-      
+
             OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
                 minimumSize: Size(double.infinity, 46),
-                side:  BorderSide(color: Color(0xff2B4E54)),
+                side: BorderSide(color: Color(0xff2B4E54)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
@@ -54,7 +52,7 @@ class SigninrightHalf extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset("assets/images/googlelogo.png", height: 18),
-                   SizedBox(width: 10),
+                  SizedBox(width: 10),
                   Text(
                     "Sign up with Google",
                     style: GoogleFonts.inter(color: Colors.white, fontSize: 14),
@@ -62,10 +60,9 @@ class SigninrightHalf extends StatelessWidget {
                 ],
               ),
             ),
-      
+
             SizedBox(height: 20),
-      
-            
+
             Row(
               children: [
                 Expanded(child: Divider(color: Colors.grey.shade700)),
@@ -79,53 +76,55 @@ class SigninrightHalf extends StatelessWidget {
                 Expanded(child: Divider(color: Colors.grey.shade700)),
               ],
             ),
-      
+
             SizedBox(height: 20),
-           Text(
+            Text(
               "Email Address",
-               style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
-               ),
-                 SizedBox(height: 6),
-      
+              style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
+            ),
+            SizedBox(height: 6),
+
             TextField(
-                decoration: InputDecoration(
-                  hintText: "trader@example.com",
+              decoration: InputDecoration(
+                hintText: "trader@example.com",
                 hintStyle: GoogleFonts.inter(color: Colors.grey),
-                prefixIcon:  Icon(Icons.email_outlined, color: Colors.grey),
-                 filled: true,
+                prefixIcon: Icon(Icons.email_outlined, color: Colors.grey),
+                filled: true,
                 fillColor: Color(0xff16282C),
                 border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
-                borderSide: BorderSide.none,
-                 ),
-                   ),
-                      ),
-      
-             SizedBox(height: 16),
-      
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide.none,
+                ),
+              ),
+            ),
+
+            SizedBox(height: 16),
+
             Text(
-                "Password",
-                style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
+              "Password",
+              style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
+            ),
+            SizedBox(height: 6),
+
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "••••••••",
+                hintStyle: GoogleFonts.inter(color: Colors.grey),
+                prefixIcon: const Icon(Icons.lock_outline, color: Colors.grey),
+                suffixIcon: Icon(
+                  Icons.visibility_off_outlined,
+                  color: Colors.grey,
                 ),
-           SizedBox(height: 6),
-      
-                TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: "••••••••",
-                    hintStyle: GoogleFonts.inter(color: Colors.grey),
-                    prefixIcon: const Icon(Icons.lock_outline, color: Colors.grey),
-                    suffixIcon:
-                         Icon(Icons.visibility_off_outlined, color: Colors.grey),
-                    filled: true,
-                    fillColor: const Color(0xff16282C),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide.none,
-                    ),
-                  ),
+                filled: true,
+                fillColor: const Color(0xff16282C),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide.none,
                 ),
-             SizedBox(height: 12),
+              ),
+            ),
+            SizedBox(height: 12),
             Row(
               children: [
                 Checkbox(
@@ -135,28 +134,30 @@ class SigninrightHalf extends StatelessWidget {
                 ),
                 Text(
                   "Remember me",
-                  style: GoogleFonts.inter(color: Color(0xff92C0C9), fontSize: 12),
+                  style: GoogleFonts.inter(
+                    color: Color(0xff92C0C9),
+                    fontSize: 12,
+                  ),
                 ),
                 const Spacer(),
                 Text(
                   "Forgot Password?",
                   style: GoogleFonts.inter(
-                    color:  Color(0xff2BCDEE6),
+                    color: Color(0xff2BCDEE6),
                     fontSize: 12,
                   ),
                 ),
               ],
             ),
-      
+
             const SizedBox(height: 16),
-      
+
             Container(
               width: double.infinity,
               height: 48,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                  color:Color(0xff2BCDEE),
-               
+                color: Color(0xff2BCDEE),
               ),
               child: Center(
                 child: Text(
@@ -168,31 +169,31 @@ class SigninrightHalf extends StatelessWidget {
                 ),
               ),
             ),
-              SizedBox(height: 16),
-      
+            SizedBox(height: 16),
+
             Row(
               children: [
                 Text(
                   "Don't have an account? ",
-                  style: GoogleFonts.inter(color: Color(0xff92C0C9), fontSize: 12),
+                  style: GoogleFonts.inter(
+                    color: Color(0xff92C0C9),
+                    fontSize: 12,
+                  ),
                 ),
-                 SizedBox(width: 10,),
-            Text(
-              "Sign up for free",
-              style: GoogleFonts.inter(
-                color: Color(0xffFFFFFF),
-                fontSize: 14,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
+                SizedBox(width: 10),
+                Text(
+                  "Sign up for free",
+                  style: GoogleFonts.inter(
+                    color: Color(0xffFFFFFF),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
               ],
             ),
-           
           ],
         ),
       ),
     );
   }
-
-  
 }
