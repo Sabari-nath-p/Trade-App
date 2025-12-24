@@ -14,7 +14,7 @@ class SigninrightHalf extends StatelessWidget {
       child: Container(
         //  height: 598.h,
         width: double.infinity,
-        padding: const EdgeInsets.all(24),
+        margin: EdgeInsets.symmetric(horizontal: 50.w, vertical: 24.w),
         decoration: BoxDecoration(
           color: Color(0xff111F22),
           borderRadius: BorderRadius.circular(16),
@@ -27,7 +27,7 @@ class SigninrightHalf extends StatelessWidget {
               "Welcome Back",
               style: GoogleFonts.inter(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: 30.sp,
                 fontWeight: FontWeight.w900,
               ),
             ),
@@ -44,7 +44,7 @@ class SigninrightHalf extends StatelessWidget {
             OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size(double.infinity, 46),
+                minimumSize: Size(double.infinity, 46.h),
                 side: BorderSide(color: Color(0xff2B4E54)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),

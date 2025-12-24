@@ -7,6 +7,11 @@ class SignInWebview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [Signinlefthalf(), SigninrightHalf()]);
+    return Row(
+      children: [
+        Signinlefthalf(),
+        Expanded(child: SigninrightHalf()),
+      ],
+    );
   }
 }
