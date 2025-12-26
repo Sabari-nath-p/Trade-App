@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tradeapp/core/constants/size_extensions.dart';
+import 'package:tradeapp/core/routes/app_pages.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/widgets/custom_header.dart';
 import '../../../core/widgets/custom_sidebar.dart';
@@ -128,7 +131,9 @@ class _TradeLogsContent extends StatelessWidget {
               text: "Add Manual Trade",
               icon: Icons.add,
               fullWidth: false,
-              onPressed: () {},
+              onPressed: () {
+                Get.toNamed(Routes.ADD_TRADE);
+              },
             ),
           ],
         ),

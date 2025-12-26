@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:tradeapp/features/account/screens/accounts_screen.dart';
 import 'package:tradeapp/features/auth/screens/signin_screen.dart';
 import '../../features/auth/screens/signup_screen.dart';
 import '../../features/dashboard/screens/dashboard_screen.dart';
@@ -44,6 +45,12 @@ class AppPages {
     GetPage(
       name: _Paths.AI_ASSISTANT,
       page: () => const AiAssistantScreen(),
+      transition: Transition.noTransition,
+    ),
+
+    GetPage(
+      name: _Paths.ACCOUNTS,
+      page: () => const AccountsScreen(),
       transition: Transition.noTransition,
     ),
   ];

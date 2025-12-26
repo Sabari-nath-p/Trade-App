@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tradeapp/core/constants/size_extensions.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tradeapp/core/routes/app_pages.dart';
@@ -90,6 +90,12 @@ class CustomSidebar extends StatelessWidget {
                 Get.currentRoute == Routes.TRADE_LOGS ||
                 Get.currentRoute == Routes.ADD_TRADE,
             onTap: () => Get.offNamed(Routes.TRADE_LOGS),
+          ),
+          _SidebarItem(
+            icon: Icons.account_balance_wallet, // Icon for Accounts
+            label: "Accounts",
+            isActive: Get.currentRoute == Routes.ACCOUNTS,
+            onTap: () => Get.offNamed(Routes.ACCOUNTS),
           ),
           _SidebarItem(
             icon: Icons.psychology,

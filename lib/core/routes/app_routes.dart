@@ -8,13 +8,14 @@ abstract class Routes {
   static const ADD_TRADE = _Paths.ADD_TRADE;
   static const AI_ASSISTANT = _Paths.AI_ASSISTANT;
   static const SIGNIN = _Paths.SIGNIN;
+  static const ACCOUNTS = _Paths.ACCOUNTS; 
 }
 
 abstract class _Paths {
   _Paths._();
   static const SIGNUP = '/signup';
   static const SIGNIN = '/sigin';
-
+static const ACCOUNTS = '/accounts'; 
   static const DASHBOARD = '/dashboard';
   static const TRADE_LOGS = '/trade-logs';
   static const ADD_TRADE = '/add-trade';
